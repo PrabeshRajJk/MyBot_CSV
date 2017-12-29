@@ -1,0 +1,97 @@
+NOTE  |Author: Prabesh 杰诗 - ver. 1.0 - 2017-12-19
+NOTE  |Make these Troops:  15-20 Giants,15-22 wizz ,4 valkery ,  4 Wall Breakers
+NOTE  |Make these Spells: 4eq,2 heal ,3 haste
+NOTE  |cc : giant/wizz haste,1/2 golem
+NOTE  |SIDES USED : RIGHT-BACK ,BACK-RIGHT
+NOTE  |Total SIDES ARE :- RIGHT-FRONT , RIGHT-BACK , BACK-RIGHT , BACK-LEFT , LEFT-BACK , LEFT-FRONT , FRONT-LEFT , FRONT-RIGHT 
+      |---------------------------------------- Prj script start -----------------------------|
+  
+      |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|                   
+SIDE  |0          |5          |0          |0          |3          |0          |2          |           |
+
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|
+MAKE  |A          |RIGHT-BACK |10         |-11        |INT-EXT    |0          |0          |           |vector for Earth quakes 
+MAKE  |B          |RIGHT-BACK |10         |1          |EXT-INT    |0          |0          |           |vector for 1st wave of Giant
+MAKE  |C          |RIGHT-BACK |10         |2          |EXT-INT    |2          |3          |           |vector for 1st wave of Wizz 
+MAKE  |D          |RIGHT-BACK |10         |1          |EXT-INT    |2          |1          |           |vector for 1st wave of Wall breaker
+MAKE  |E          |RIGHT-BACK |10         |1          |INT-EXT    |1          |2          |           |vector for 1st wave of Valk
+MAKE  |F          |BACK-RIGHT |10         |1          |INT-EXT    |2          |3          |           |vector for 2nd wave of Giant
+MAKE  |G          |BACK-RIGHT |10         |2          |INT-EXT    |2          |1          |           |vector for 2nd wave of Wizz
+MAKE  |H          |BACK-RIGHT |10         |1          |INT-EXT    |2          |3          |           |vector for 2nd wave of valk
+MAKE  |I          |LEFT-FRONT |10         |1          |EXT-INT    |2          |1          |           |vector for KING
+MAKE  |J          |LEFT-BACK  |10         |2          |EXT-INT    |2          |1          |           |vector for QUEEN
+MAKE  |K          |LEFT-FRONT |10         |2          |INT-EXT    |2          |1          |           |vector for WARDEN
+MAKE  |L          |LEFT-FRONT |10         |1          |EXT-INT    |2          |1          |           |vector for 3rd  wave of Giant
+MAKE  |M          |LEFT-FRONT |10         |1          |EXT-INT    |0          |0          |           |vector for 3rd wave of wizz
+MAKE  |N          |LEFT-FRONT |10         |1          |EXT-INT    |0          |0          |           |vector for 3rd wave of Giant
+MAKE  |O          |LEFT-BACK  |10         |1          |INT-EXT    |0          |0          |           |vector for Clan castel troops
+MAKE  |P          |LEFT-BACK  |10         |2          |EXT-INT    |2          |3          |           |vector for last wave of  wizz 
+MAKE  |Q          |LEFT-BACK  |10         |1          |EXT-INT    |2          |3          |           |vector for last wave of  Valk
+
+MAKE  |R          |FRONT-RIGHT|10         |1          |INT-EXT    |0          |0          |           |vector for 
+MAKE  |S          |LEFT-BACK  |10         |2          |EXT-INT    |2          |1          |           |vector for 
+MAKE  |T          |RIGHT-FRONT|10         |1          |INT-EXT    |0          |0          |           |vector for 
+
+MAKE  |U          |RIGHT-BACK |10         |-1         |INT-EXT    |0          |0          |           |vector for 1st haste
+MAKE  |V          |BACK-RIGHT |10         |-13        |INT-EXT    |5          |0          |           |vector for 2st haste
+MAKE  |W          |BACK-LEFT  |10         |-7         |INT-EXT    |0          |0          |           |vector for 3rd haste
+MAKE  |X          |LEFT-BACK  |10         |-12        |INT-EXT    |0          |0          |           |vector for 4th haste
+MAKE  |Y          |RIGHT-FRONT|10         |-17        |INT-EXT    |0          |0          |           |vector for 1st heal
+MAKE  |Z          |RIGHT-BACK |10         |-29        |INT-EXT    |0          |0          |           |vector for 2nd heal
+
+
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|   
+DROP  |A          |1          |4          |Espell     |20-400     |0          |500-600    |           | Droping quakes 
+
+RECALC|           |           |           |           |           |           |           |           |recalculate remaining troops and then launch...
+
+DROP  |A          |1          |4          |Espell     |20-400     |0          |500-600    |           | Droping quakes 
+DROP  |B          |1-10       |10         |Giant      |50-400     |0          |400-600    |           | Droping 10 Giants
+DROP  |C          |1-10       |10         |Wiza       |50-70      |0          |800        |           | Droping 10 Wizards
+DROP  |D          |1          |2          |wall       |10-20      |0          |300        |           | Droping 2 wall breakers
+DROP  |E          |1          |2          |Valk       |10-20      |0          |300        |           | Droping 3 of Valkery 
+DROP  |U          |1          |1          |haspell    |1          |0          |300        |           | Droping 1st haste Spell
+
+WAIT  |500-800    |           |           |           |           |           |           |           |
+DROP  |V          |4          |1          |haspell    |1          |0          |2000-3000  |           | Droping 2nd Haste Spell
+DROP  |F          |2          |3          |Giant      |20-400     |0          |5000-6000  |           | Droping giants 
+DROP  |G          |10         |7          |Wiza       |1          |0          |2000-4000  |           | Drop 6 Wizards
+DROP  |H          |1          |2          |Valk       |10-20      |0          |300        |           | Droping 3 of Valkery 
+DROP  |R          |1          |1          |Castle     |1          |0          |10000      |           | Droping Castle Troops 
+DROP  |I          |1          |1          |Warden     |1          |100        |100-300    |           | Drop of Warden
+DROP  |J          |2          |1          |Queen      |1          |100        |50-300     |           | Droping Queen
+DROP  |K          |2          |1          |King       |1          |100        |100-200    |           | Droping KING
+WAIT  |180-2000   |           |           |           |           |           |           |           |
+
+DROP  |W          |1          |1          |haspell    |1          |0          |300        |           | Droping 3rd haste Spell
+DROP  |Y          |4          |2          |HSpell     |1          |0          |1000-1500  |           | Droping 1st Heal Spell
+RECALC|           |           |           |           |           |           |           |           |recalculate remaining troops and then launch...
+WAIT  |180-200    |           |           |           |           |           |           |           |
+DROP  |X          |1          |1          |haspell    |1          |0          |300        |           | Droping 4th haste Spell
+DROP  |Z          |4          |2          |HSpell     |1          |0          |1000-1500  |           | Droping 2nd Heal Spell
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|DROP REMAINING
+
+DROP  |B-C-D-E    |6          |10         |giant      |30-50      |40-70      |500-800    |           |launch giants using all 4 vectors concurrently...             4 giant
+DROP  |B-C-D-E    |6          |10         |valk       |30-50      |40-70      |200-300    |           |launch valk using all 4 vectors concurrently...               4 valk
+DROP  |B-C-D-E    |6          |10         |wiza       |30-50      |40-70      |200-300    |           |launch wizards using all 4 vectors concurrently...            4 wiza
+DROP  |A-B-B-A    |6          |2          |wall       |30-50      |0          |200-300    |           |launch wall using all 4 vectors concurrently...               8 wall
+DROP  |I          |4          |1          |haspell    |1          |0          |2000-3000  |           | Droping 3rd Haste Spell
+DROP  |Z          |4          |2          |HSpell     |1          |0          |1000-1500  |           | Droping 2nd Heal Spell
+
+
+
+      |---------------------------------------- Extra troops (for Extra troops) -----------------------------|
+
+DROP  |A-B-B-A    |1-10       |10         |arch       |30-50      |40-70      |200-300    |           |launch barbarians using all 4 vectors concurrently...        40 arch
+DROP  |A-B-B-A    |1-10       |10         |barb       |30-50      |40-70      |200-300    |           |launch archers using all 4 vectors concurrently...           40 barb
+DROP  |A-B-B-A    |7          |1          |hogs       |30-50      |40-70      |200-300    |           |launch hogs using all 4 vectors concurrently...               4 hogs
+DROP  |A-B-B-A    |5          |1          |pekk       |30-50      |0          |200-300    |           |launch pekk using all 4 vectors concurrently...               4 pekk
+DROP  |A-B-B-A    |5          |5          |gole       |30-50      |0          |200-300    |           |launch gole using all 4 vectors concurrently...               4 gole
+DROP  |A-B-B-A    |6          |1          |Mine       |30-50      |40-70      |200-300    |           |launch miners using all 4 vectors concurrently...             4 Mine
+DROP  |A-B-B-A    |6          |1          |Bowl       |30-50      |40-70      |200-300    |           |launch bowlers using all 4 vectors concurrently...            4 Bowl
+
+
+      
