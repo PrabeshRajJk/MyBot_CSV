@@ -1,9 +1,10 @@
 NOTE  |Author: Prabesh 杰诗 - ver. 2.8 - 2018-01-06
-NOTE  |Make these Troops:  15-20 Giants,15-30 wizz ,4-10 valkery ,  4-10 Wall Breakers
-NOTE  |Make these Spells: 4eq,2 heal ,3 haste
-NOTE  |cc : giant/wizz  golem,  HASTE
-NOTE  |Troops and spell what i made  :- 5 Wb, 18 Giants(lvl 7), 24 Wizard(lvl 7), 5 valk (lvl 2) 4eq,3haste,2heal
-      |---------------------------------------- Prj script start -----------------------------|
+NOTE  |Troops and spell what i made and tested
+NOTE  |Th8: 16 barab, 16giants, 8wallBreakers, 22wizz,  3 heal....  CC: ground troops  Haste
+NOTE  |Th9: 10 barb, 16 giant ,25 Wizzards, 5 WallBreakers, 2 Heal , 3EarthQuake... CC: any ground troops, Earthquake
+NOTE  |Th10/11:  18 Giant, 25Wizz,  5WallBreaker  5Valk ,  2Heal, 4 earthquake, 3 haste...CC:ground troops , Haste
+
+      |---------------------------------------- PrabeshRajJk script start -----------------------------|
   
    
       |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|                   
@@ -116,4 +117,4 @@ DROP  |B-C-C-B    |1-10       |100%        |Mini       |30-50      |40-70      |
 DROP  |B-C-C-B    |1-10       |100%        |BabyD      |30-50      |40-70      |100-300    |           |Dropping BabyDragon using all 4 vectors concurrently...BabyDragon
 DROP  |B-C-C-B    |1-10       |100%        |Gobl       |30-50      |40-70      |100-300    |           |Dropping Goblin using all 4 vectors concurrently...    Goblin
 
-      
+       |---------------------------------------- PrabeshRajJk script ends -----------------------------|
