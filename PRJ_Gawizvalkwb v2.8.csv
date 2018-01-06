@@ -8,7 +8,7 @@ NOTE  |Th10/11:  18 Giant, 25Wizz,  5WallBreaker  5Valk ,  2Heal, 4 earthquake, 
   
    
       |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|                   
-SIDE  |0          |6          |0          |0          |4          |0          |0          |           |
+SIDE  |0          |0          |6          |0          |0          |4          |0          |           |
 
 
       |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|
@@ -94,27 +94,27 @@ DROP  |M-N-O-P-Q  |6          |10         |valk       |30-50      |40-70      |1
 DROP  |M-N-O-P-Q  |6          |10         |wiza       |30-50      |40-70      |100-300    |           | Dropping wizards using all 4 vectors concurrently...4 wiza
 DROP  |M-N-O-P-Q  |6          |2          |wall       |30-50      |0          |100-300    |           | Dropping wall using all 4 vectors concurrently...   8 wall
 DROP  |M-N-O-P-Q  |1-10       |15         |barb       |30-50      |40-70      |100-300    |           | Dropping archers using all 4 vectors concurrently...   40 barb
-DROP  |I          |4          |2          |haspell    |100-500    |0          |2000-3000  |           | Dropping 3rd Haste Spell
-DROP  |Y-Z        |2-3        |3          |HSpell     |1          |0          |10-150     |           | Dropping 2nd Heal Spell
+DROP  |W          |4          |2          |haspell    |100-500    |0          |2000-3000  |           | Dropping 3rd Haste Spell
+DROP  |Y-Z        |2-3        |3          |HSpell     |1          |0          |10-150     |           | Dropping 2nd &3rd Heal Spell
 
       
 
 
       |---------------------------------------- Extra troops (In case u prepare extra troops ) -----------------------------|
 
-DROP  |B-C-C-B    |1-10       |100%        |Arch       |30-50      |40-70      |100-300    |           |Dropping barbarians using all 4 vectors concurrently...archer
-DROP  |B-C-C-B    |1-10       |100%        |Barb       |30-50      |40-70      |100-300    |           |Dropping archers using all 4 vectors concurrently...   barbarian
-DROP  |B-C-C-B    |1-10       |100%        |Hogs       |30-50      |40-70      |100-300    |           |Dropping hogs using all 4 vectors concurrently...      hogs
-DROP  |B-C-C-B    |1-10       |100%        |Pekk       |30-50      |0          |100-300    |           |Dropping pekka using all 4 vectors concurrently...     pekka
-DROP  |B-C-C-B    |1-10       |100%        |Gole       |30-50      |0          |100-300    |           |Dropping gole using all 4 vectors concurrently...      gole
-DROP  |B-C-C-B    |1-10       |100%        |Mine       |30-50      |40-70      |100-300    |           |Dropping miners using all 4 vectors concurrently...    Miner
-DROP  |B-C-C-B    |1-10       |100%        |Bowl       |30-50      |40-70      |100-300    |           |Dropping bowlers using all 4 vectors concurrently...   Bowler
-DROP  |B-C-C-B    |1-10       |100%        |Witc       |30-50      |40-70      |100-300    |           |Dropping Witch using all 4 vectors concurrently...     Witch
-DROP  |B-C-C-B    |1-10       |100%        |Drag       |30-50      |40-70      |100-300    |           |Dropping Dragon using all 4 vectors concurrently...    Dragon
-DROP  |B-C-C-B    |1-10       |100%        |Ball       |30-50      |40-70      |100-300    |           |Dropping balloons using all 4 vectors concurrently...  Ballons
-DROP  |B-C-C-B    |1-10       |100%        |Lava       |30-50      |40-70      |100-300    |           |Dropping LAva using all 4 vectors concurrently...      LAva
-DROP  |B-C-C-B    |1-10       |100%        |Mini       |30-50      |40-70      |100-300    |           |Dropping Minion using all 4 vectors concurrently...    Minion
-DROP  |B-C-C-B    |1-10       |100%        |BabyD      |30-50      |40-70      |100-300    |           |Dropping BabyDragon using all 4 vectors concurrently...BabyDragon
-DROP  |B-C-C-B    |1-10       |100%        |Gobl       |30-50      |40-70      |100-300    |           |Dropping Goblin using all 4 vectors concurrently...    Goblin
+DROP  |B-C-C-B    |1-10       |100%        |Arch       |30-50      |40-70      |100-300    |           |Dropping barbarians using all 4 vectors concurrently...
+DROP  |B-C-C-B    |1-10       |100%        |Barb       |30-50      |40-70      |100-300    |           |Dropping archers using all 4 vectors concurrently...   
+DROP  |B-C-C-B    |1-10       |100%        |Hogs       |30-50      |40-70      |100-300    |           |Dropping hogs using all 4 vectors concurrently...      
+DROP  |B-C-C-B    |1-10       |100%        |Pekk       |30-50      |0          |100-300    |           |Dropping pekka using all 4 vectors concurrently...     
+DROP  |B-C-C-B    |1-10       |100%        |Gole       |30-50      |0          |100-300    |           |Dropping gole using all 4 vectors concurrently...      
+DROP  |B-C-C-B    |1-10       |100%        |Mine       |30-50      |40-70      |100-300    |           |Dropping miners using all 4 vectors concurrently...    
+DROP  |B-C-C-B    |1-10       |100%        |Bowl       |30-50      |40-70      |100-300    |           |Dropping bowlers using all 4 vectors concurrently...   
+DROP  |B-C-C-B    |1-10       |100%        |Witc       |30-50      |40-70      |100-300    |           |Dropping Witch using all 4 vectors concurrently...     
+DROP  |B-C-C-B    |1-10       |100%        |Drag       |30-50      |40-70      |100-300    |           |Dropping Dragon using all 4 vectors concurrently...    
+DROP  |B-C-C-B    |1-10       |100%        |Ball       |30-50      |40-70      |100-300    |           |Dropping balloons using all 4 vectors concurrently...  
+DROP  |B-C-C-B    |1-10       |100%        |Lava       |30-50      |40-70      |100-300    |           |Dropping LAva using all 4 vectors concurrently...      
+DROP  |B-C-C-B    |1-10       |100%        |Mini       |30-50      |40-70      |100-300    |           |Dropping Minion using all 4 vectors concurrently...    
+DROP  |B-C-C-B    |1-10       |100%        |BabyD      |30-50      |40-70      |100-300    |           |Dropping BabyDragon using all 4 vectors concurrently...
+DROP  |B-C-C-B    |1-10       |100%        |Gobl       |30-50      |40-70      |100-300    |           |Dropping Goblin using all 4 vectors concurrently...    
 
        |---------------------------------------- PrabeshRajJk script ends -----------------------------|
