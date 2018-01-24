@@ -1,0 +1,118 @@
+NOTE  |Author: Prabesh 杰诗 - ver. 1.9 - 2018-01-24
+NOTE  |Troops and spell what i made and tested
+NOTE  |I am maing a csv that will have all the ground troops 
+NOTE  |Still i will be focusing on the GiBarch mainly 
+
+      |---------------------------------------- PrabeshRajJk script start -----------------------------|
+  
+   
+      |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|                   
+SIDE  |0          |0          |6          |0          |0          |4          |0          |           |
+
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|
+MAKE  |A          |RIGHT-BACK |10         |-11        |INT-EXT    |0          |0          |           |vector for Earth quakes 
+MAKE  |B          |RIGHT-BACK |10         |1          |INT-EXT    |2          |1          |           |vector for 1st wave of troops on right back side
+MAKE  |C          |RIGHT-FRONT|10         |1          |INT-EXT    |2          |3          |           |vector for 2nd wave of troops on right front side
+
+MAKE  |D          |RIGHT-FRONT|10         |1          |EXT-INT    |2          |1          |           |vector for Clan castle troops
+MAKE  |E          |RIGHT-FRONT|10         |1          |EXT-INT    |2          |1          |           |vector for KING
+MAKE  |F          |RIGHT-FRONT|10         |2          |EXT-INT    |2          |1          |           |vector for WARDEN
+MAKE  |G          |RIGHT-FRONT|10         |2          |EXT-INT    |2          |1          |           |vector for QUEEN 
+
+MAKE  |H          |RIGHT-BACK |10         |2          |EXT-INT    |2          |3          |           |vector for 3rd wave of troops on right front side 
+MAKE  |I          |RIGHT-BACK |10         |1          |EXT-INT    |2          |3          |           |vector for 3rd wave of troops on right front side
+
+MAKE  |P          |RIGHT-BACK |10         |-6         |INT-EXT    |0          |0          |           |vector for 1st Poison Spell
+MAKE  |R          |RIGHT-BACK |10         |-6         |INT-EXT    |0          |0          |           |vector for 1st Rage spell
+MAKE  |S          |RIGHT-BACK |10         |-11        |INT-EXT    |0          |0          |           |vector for 1st Skeleton Spell
+MAKE  |R          |RIGHT-BACK |10         |-6         |INT-EXT    |0          |0          |           |vector for 1st Rage spell
+
+MAKE  |U          |RIGHT-BACK |10         |-5         |INT-EXT    |0          |0          |           |vector for 1st haste 
+MAKE  |V          |RIGHT-BACK |10         |-8         |INT-EXT    |5          |0          |           |vector for 2st haste
+MAKE  |W          |RIGHT-FRONT|10         |-8         |INT-EXT    |0          |0          |           |vector for 3rd haste
+MAKE  |X          |LEFT-BACK  |10         |-14        |INT-EXT    |0          |0          |           |vector for 4th haste
+
+MAKE  |Y          |RIGHT-FRONT|10         |-13        |INT-EXT    |0          |0          |           |vector for 1st heal
+MAKE  |Z          |FRONT-RIGHT|10         |-17        |INT-EXT    |0          |0          |           |vector for 2nd heal
+
+
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|  
+	  
+DROP  |A          |1          |4          |Espell     |20-400     |0          |500-600    |           | Dropping Earth quakes 
+
+RECALC|           |           |           |           |           |           |           |           |recalculate remaining troops 
+
+DROP  |A          |1          |4          |Espell     |20-400     |10         |200-300    |           | Dropping quakes 
+DROP  |B-C        |1-10       |50%        |Giant      |50-400     |1          |100-1000   |           | Dropping 1st wave of Giants
+DROP  |B-C        |1          |2          |wall       |10-20      |3          |100-500    |           | Dropping 1st wave of wall breakers
+DROP  |B-C        |1-10       |50%        |Valk       |10-20      |40-70      |100-1000   |           | Dropping 1st wave of Valkery 
+DROP  |B-C        |1-10       |50%        |Hogs       |30-50      |40-70      |100-1000   |           | Dropping 1st wave of hogs      
+DROP  |B-C        |1-10       |50%        |Pekk       |30-50      |40-70      |100-1000   |           | Dropping 1st wave of pekka   
+DROP  |B-C        |1-10       |50%        |Gole       |30-50      |40-70      |100-1000   |           | Dropping 1st wave of gole       
+DROP  |B-C        |1-10       |50%        |Mine       |30-50      |40-70      |100-1000   |           | Dropping 1st wave of miners    
+DROP  |B-C        |1-10       |50%        |Bowl       |30-50      |40-70      |100-1000   |           | Dropping 1st wave of bowlers  
+DROP  |B-C        |1-10       |30%        |Barb       |50-70      |40-70      |100-1000   |           | Dropping 1st wave of Barbarian
+DROP  |B-C        |1-10       |30%        |Wiza       |50-70      |40-70      |100-1000   |           | Dropping 1st wave of Wizards
+DROP  |B-C        |1-10       |30%        |Arch       |50-70      |40-70      |100-1000   |           | Dropping 1st wave of Archer
+
+DROP  |U          |1          |1          |haspell    |1          |0          |300-500    |           | Dropping 1st haste Spell
+DROP  |U          |1          |1          |pspell     |1          |0          |300-500    |           | Dropping 1st Poison Spell
+DROP  |R          |1          |1          |Rspell     |1          |0          |300-500    |           | Dropping 1st Rage Spell
+DROP  |S          |1          |1          |Skspell    |1          |0          |300-500    |           | Dropping 1st Skeleton Spell
+
+WAIT  |1000-3000  |           |           |           |           |           |           |           |
+
+DROP  |V          |3          |1          |haspell    |10         |0          |2000-3000  |           | Dropping 2nd Haste Spell
+DROP  |Y          |1          |1          |HSpell     |100-500    |0          |1000-1500  |           | Dropping 1st Heal Spell
+
+DROP  |D          |1          |1          |Castle     |110-500    |0          |100        |           | Dropping Castle Troops
+DROP  |E          |2          |1          |King       |100-500    |100        |100-200    |           | Dropping KING
+DROP  |F          |1          |1          |Warden     |100-500    |100        |100-300    |           | Drop of Warden
+DROP  |G          |2          |1          |Queen      |50-500     |100        |50-300     |           | Dropping Queen
+
+
+WAIT  |180-500    |           |           |           |           |           |           |           |
+
+DROP  |H-I        |1-10       |50%        |Giant      |50-400     |1          |100-1000   |           | Dropping 2nd wave of Giants
+DROP  |H-I        |1          |2          |wall       |10-20      |3          |100-500    |           | Dropping 2nd wave of wall breakers
+DROP  |H-I        |1-10       |50%        |Valk       |10-20      |40-70      |100-1000   |           | Dropping 2nd wave of Valkery 
+DROP  |H-I        |1-10       |50%        |Hogs       |30-50      |40-70      |100-1000   |           | Dropping 2nd wave of hogs      
+DROP  |H-I        |1-10       |50%        |Pekk       |30-50      |40-70      |100-1000   |           | Dropping 2nd wave of pekka   
+DROP  |H-I        |1-10       |50%        |Gole       |30-50      |40-70      |100-1000   |           | Dropping 2nd wave of gole       
+DROP  |H-I        |1-10       |50%        |Mine       |30-50      |40-70      |100-1000   |           | Dropping 2nd wave of miners    
+DROP  |H-I        |1-10       |50%        |Bowl       |30-50      |40-70      |100-1000   |           | Dropping 2nd wave of bowlers  
+DROP  |W          |4          |1          |haspell    |100-500    |0          |300        |           | Dropping 3rd haste Spell
+DROP  |Z          |1          |1          |HSpell     |100-500    |0          |1000-1500  |           | Dropping 2nd Heal Spell
+DROP  |H-I        |1-10       |30%        |Barb       |50-70      |40-70      |100-1000   |           | Dropping 2nd wave of Barbarian
+DROP  |H-I        |1-10       |30%        |Wiza       |50-70      |40-70      |100-1000   |           | Dropping 2nd wave of Wizards
+DROP  |H-I        |1-10       |30%        |Arch       |50-70      |40-70      |100-1000   |           | Dropping 2nd wave of Archer
+D
+RECALC|           |           |           |           |           |           |           |           | recalculate remaining troops 
+
+
+DROP  |X          |1          |1          |haspell    |100-500    |0          |300        |           | Dropping 4th haste Spell
+
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|DROP REMAINING
+
+DROP  |B-C-H-I    |6          |10         |giant      |30-50      |40-70      |100-600    |           | Dropping giants using all 4 vectors concurrently... 4 giant
+DROP  |B-C-H-I    |6          |10         |valk       |30-50      |40-70      |100-300    |           | Dropping valk using all 4 vectors concurrently...   4 valk
+DROP  |B-C-H-I    |6          |10         |wiza       |30-50      |40-70      |100-300    |           | Dropping wizards using all 4 vectors concurrently...4 wiza
+DROP  |B-C-H-I    |6          |2          |wall       |30-50      |0          |100-300    |           | Dropping wall using all 4 vectors concurrently...   8 wall
+DROP  |W          |4          |2          |Haspell    |100-500    |0          |2000-3000  |           | Dropping 3rd Haste Spell
+DROP  |Y-Z        |2-3        |3          |HSpell     |1          |0          |10-150     |           | Dropping 2nd &3rd Heal Spell
+
+      
+
+
+      |--------------------- Extra troops (In case u prepare extra air troops ) ---------------------------|
+DROP  |B-C-H-I    |1-10       |100%        |Drag       |30-50      |40-70      |100-300    |           |Dropping Dragon using all 4 vectors concurrently...    
+DROP  |B-C-H-I    |1-10       |100%        |Ball       |30-50      |40-70      |100-300    |           |Dropping balloons using all 4 vectors concurrently...  
+DROP  |B-C-H-I    |1-10       |100%        |Lava       |30-50      |40-70      |100-300    |           |Dropping LAva using all 4 vectors concurrently...      
+DROP  |B-C-H-I    |1-10       |100%        |Mini       |30-50      |40-70      |100-300    |           |Dropping Minion using all 4 vectors concurrently...    
+DROP  |B-C-H-I    |1-10       |100%        |BabyD      |30-50      |40-70      |100-300    |           |Dropping BabyDragon using all 4 vectors concurrently...
+DROP  |B-C-H-I    |1-10       |100%        |Gobl       |30-50      |40-70      |100-300    |           |Dropping Goblin using all 4 vectors concurrently...    
+
+      |---------------------------------- PrabeshRajJk script ends ------------------------------------|
